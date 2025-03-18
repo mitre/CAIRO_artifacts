@@ -12,7 +12,7 @@ This repository contains artifacts for the public release of CAIRO, built to det
 
 Using context-aware ontologies, CAIRO helps verify + validate ADS perception, and augments these graphs to identify risk or failure conditions in Object and Event Detection and Response (OEDR) applications.
 
-<img src="figures/revised_hmt_diagram.png">
+<img src="Figures/revised_hmt_diagram.png">
 
 <br/><br/>  
 # Structure & Contents <a name="structure"></a>
@@ -30,12 +30,12 @@ The primary contents are as follow; there is additional documentation in `exampl
 # Use Cases <a name="usecase"></a>
 The framework __empowers the Human-in-the-Loop (HITL)__.  
 
-<img src="figures/problem-spec.png" width=600 height=250>
+<img src="Figures/problem-spec.png" width=600 height=250>
 
 The HITL may modify the output knowledge graphs manually and run them against the Python-based reasoner tool. Alternatively, they may open them in the convenient and interpretable tool Protege (shown below). In either case, the CAIRO framework helps to perform integrity checks on physical properties of objects in the scene and alerts to any critical phenomena, __which the HITL can modify or verify__.
 
-<img src="figures/hil-open-inferences.png">
-<img src="figures/hil-query.png">
+<img src="Figures/hil-open-inferences.png">
+<img src="Figures/hil-query.png">
 
 
 <br/><br/>

@@ -1,0 +1,6 @@
+------ Time ------
+vendor_object_detector average extraction time per frame: 1.693913507461548
+cairo_object_detector average extraction time per frame: 2.14716694355011
+segment_classifier average extraction time per frame: 146.51494584083557
+lane_detector average extraction time per frame: 0.1470874547958374
+owl contruction time per frame: 361.5897876977921

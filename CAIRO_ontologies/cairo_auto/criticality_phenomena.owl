@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/auto/criticality_phenomena#"
+     xml:base="http://purl.org/auto/criticality_phenomena"
+     xmlns:cp="http://purl.org/auto/criticality_phenomena#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:auto="http://purl.org/auto/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://purl.org/auto/criticality_phenomena"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#formalized -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/auto/criticality_phenomena#formalized"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+    <!-- <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#CAIRO_CP_1000">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Criticality_Phenomenon"/>
+        <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"> 1 </dcterms:identifier>
+        <rdfs:comment xml:lang="en"> This is used to validate our reasoner works </rdfs:comment>
+        <rdfs:label xml:lang="en"> Vehicle has wheel (test only)</rdfs:label>
+    </owl:Class> -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Vulnerable_Object_01">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Criticality_Phenomenon"/>
+        <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"> 1 </dcterms:identifier>
+        <rdfs:comment xml:lang="en">  </rdfs:comment>
+        <rdfs:label xml:lang="en">Vulnerable Object 01: a truck has unusual behavior (unloading, parking, etc.)</rdfs:label>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Vulnerable_Object_02">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Criticality_Phenomenon"/>
+        <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"> 2 </dcterms:identifier>
+        <rdfs:comment xml:lang="en">  </rdfs:comment>
+        <rdfs:label xml:lang="en">Vulnerable Object 01: road user</rdfs:label>
+    </owl:Class>
+
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Off_Body_Wheel">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Criticality_Phenomenon"/>
+        <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"> 3 </dcterms:identifier>
+        <rdfs:comment xml:lang="en">  </rdfs:comment>
+        <rdfs:label xml:lang="en">Off Body Wheel</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Near_Car_License_Plate_Missing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Criticality_Phenomenon"/>
+        <dcterms:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"> 4 </dcterms:identifier>
+        <rdfs:comment xml:lang="en">  </rdfs:comment>
+        <rdfs:label xml:lang="en">License Plate Missing + Critical Distance </rdfs:label>
+    </owl:Class> -->
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    
+
+    <!-- http://purl.org/auto/criticality_phenomena#Behavioral_Criticality_Phenomenon -->
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Behavioral_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Behavioral Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Verhaltens_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Complexity_Criticality_Phenomenon -->
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Complexity_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Complexity Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Komplexitäts_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Criticality_Phenomenon">
+        <rdfs:label xml:lang="en">Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Dynamical_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Dynamical_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Dynamical Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Dynamisches_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Environmental_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Environmental_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Environmental Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Umwelt_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Human_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Human_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Human Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Menschliches_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Perception_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Perception_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Perception Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Perzeptions_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Perfect_Camera_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Perfect_Camera_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Perfect_Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="de">Perekte_Kamera_Kritikalitätsphänomen</rdfs:label>
+        <rdfs:label xml:lang="en">Perfect Camera Criticality Phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Perfect_Human_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Perfect_Human_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Perfect_Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="de">Perekter_Mensch_Kritikalitätsphänomen</rdfs:label>
+        <rdfs:label xml:lang="en">Perfect Human Criticality Phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Perfect_Lidar_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Perfect_Lidar_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Perfect_Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="de">Perektes_Lidar_Kritikalitätsphänomen</rdfs:label>
+        <rdfs:label xml:lang="en">Perfect Lidar Criticality Phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Perfect_Perception_Algorithm_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Perfect_Perception_Algorithm_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Perfect_Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Perfect Perception Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Perfekter_Perzeptionsalgorithmen_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Perfect_Perception_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Perfect_Perception_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Perfect erception Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Perfektes_Perzeptions_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Perfect_Radar_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Perfect_Radar_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Perfect_Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="de">Perektes_Radar_Kritikalitätsphänomen</rdfs:label>
+        <rdfs:label xml:lang="en">Perfect Radar Criticality Phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Real_Camera_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Real_Camera_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Real_Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Real Camera Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Reale_Kamera_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Real_Human_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Real_Human_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Real_Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Real Human Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Realer_Mensch_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Real_Lidar_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Real_Lidar_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Real_Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Real Lidar Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Reales_Lidar_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Real_Perception_Algorithm_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Real_Perception_Algorithm_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Real_Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Real Perception Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Realer_Perzeptionsalgorithmen_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Real_Perception_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Real_Perception_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Real Perception Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Reales_Perzeptions_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Real_Radar_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Real_Radar_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Real_Perception_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Real Radar Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Reales_Radar_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Spatial_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Spatial_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="de">Räumliches_Kritikalitätsphänomen</rdfs:label>
+        <rdfs:label xml:lang="en">Spatial Criticality Phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="de">Getaggtes_Kritikalitätsphänomen</rdfs:label>
+        <rdfs:label xml:lang="en">Tagged Criticality Phenomenon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Temporal_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Temporal_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Temporal Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Temporales_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/auto/criticality_phenomena#Unpredictability_Criticality_Phenomenon -->
+
+    <owl:Class rdf:about="http://purl.org/auto/criticality_phenomena#Unpredictability_Criticality_Phenomenon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/auto/criticality_phenomena#Tagged_Criticality_Phenomenon"/>
+        <rdfs:label xml:lang="en">Unpredictability Criticality Phenomenon</rdfs:label>
+        <rdfs:label xml:lang="de">Unvorhersehbarkeits_Kritikalitätsphänomen</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
